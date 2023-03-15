@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo><data>
+
+<record id="portfolio_companies_action" model="ir.actions.act_window">
+    <field name="name">Companies</field>
+    <field name="res_model">portfolio.companies</field>
+    <field name="view_mode">tree,form</field>
+</record>
+
+</data></odoo>

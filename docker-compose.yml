@@ -17,7 +17,6 @@ services:
     volumes:
       - ./data/odoo:/var/lib/odoo
       - ./addons:/mnt/extra-addons
-      - ./config/odoo:/etc/odoo
     ports:
       - "8069:8069"
     environment:
