@@ -10,7 +10,7 @@
     """,
     # data files always loaded at installation
     'data': [
-        'views/portfolio_companies.xml',
+        'views/companies/portfolio_companies.xml',
         'views/portfolio_menu.xml',
         'data/ir.model.access.csv'
     ],

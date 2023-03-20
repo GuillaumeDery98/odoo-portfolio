@@ -6,3 +6,8 @@ class PortfolioCompanies(models.Model):
     _description = "Companies"
 
     name = fields.Char()
+    post = fields.Char()
+    description = fields.Text()
+    website = fields.Char()
+    phone = fields.Char()
+    email = fields.Char()
