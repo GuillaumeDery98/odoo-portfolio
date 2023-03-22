@@ -1,2 +1,3 @@
 id,name,model_id/id,group_id/id,perm_read,perm_write,perm_create,perm_unlink
 access_companies_model,access_companies_model,model_portfolio_companies,base.group_user,1,1,1,1
+access_projects_model,access_projects_model,model_portfolio_projects,base.group_user,1,1,1,1
