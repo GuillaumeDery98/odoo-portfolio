@@ -14,11 +14,12 @@
                 <tree string="Companies">
                     <field name="logo" widget="image" class="logo-tree"/>
                     <field name="name" class="h1"/>
+                    <field name="infos" string="Information's" />
                 </tree>
             </field>
         </record>
 
-        <record id="crm_lost_reason_view_form" model="ir.ui.view">
+         <record id="crm_lost_reason_view_form" model="ir.ui.view">
             <field name="name">portfolio.companies.form</field>
             <field name="model">portfolio.companies</field>
             <field name="arch" type="xml">

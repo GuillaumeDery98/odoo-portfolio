@@ -12,11 +12,11 @@ class PortfolioCompanies(models.Model):
     phone = fields.Char()
     email = fields.Char()
     logo = fields.Binary()
-    info = fields.Char(compute="_compute_info", store=False)
+    infos = fields.Text(compute="_compute_infos", store=False)
     projects_ids = fields.One2many(
         "portfolio.projects", "company_id", string="Projects")
 
     @api.depends('website', 'phone', 'email')
-    def _compute_info(self):
+    def _compute_infos(self):
         for record in self:
-            record.info = record.website + record.phone + record.email
+            record.infos = "Website: " + record.website + "\nPhone: " + record.phone + "\nEmail: " + record.email
