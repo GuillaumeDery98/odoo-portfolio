@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+       <record id="portfolio_screenshots_action" model="ir.actions.act_window">
+            <field name="name">Screenshots</field>
+            <field name="res_model">portfolio.screenshots</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+
+        <record id="portfolio_screenshots_view_tree" model="ir.ui.view">
+            <field name="name">portfolio.screenshots.tree</field>
+            <field name="model">portfolio.screenshots</field>
+            <field name="arch" type="xml">
+                <tree string="screenshots">
+                    <field name="name"/>
+                    <field name="screenshot" widget="image" />
+                </tree>
+            </field>
+        </record>
+
+    </data>
+</odoo>

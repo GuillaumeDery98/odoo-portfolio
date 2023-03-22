@@ -12,6 +12,7 @@
     'data': [
         'views/companies/portfolio_companies.xml',
         'views/projects/portfolio_projects.xml',
+        'views/projects/portfolio_screenshots.xml',
         'views/portfolio_menu.xml',
         'data/ir.model.access.csv'
     ],

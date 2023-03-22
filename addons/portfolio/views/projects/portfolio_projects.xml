@@ -39,6 +39,9 @@
                                 <page string="Description">
                                     <field name="description"/>
                                 </page>
+                                <page string="Screenshots">
+                                    <field name="screenshots_ids" widget="one2many"/>
+                                </page>
                             </notebook>
                         </group>
                     </sheet>

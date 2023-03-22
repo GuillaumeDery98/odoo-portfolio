@@ -10,3 +10,4 @@ class PortfolioProjects(models.Model):
     website = fields.Char()
     logo = fields.Binary()
     company_id = fields.Many2one("portfolio.companies", string="Company")
+    screenshots_ids = fields.One2many("portfolio.screenshots", 'project_id', string="Screenshots")
