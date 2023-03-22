@@ -8,6 +8,8 @@ services:
       - POSTGRES_DB=postgres
       - POSTGRES_PASSWORD=${PASSWORD}
       - PGDATA=/var/lib/postgresql/data/pgdata
+    volumes:
+      - db:/var/lib/postgresql/data/
     ports:
       - "5432:5432"
   web:
@@ -15,6 +17,7 @@ services:
     depends_on:
       - db
     volumes:
+      - odoo:/var/lib/odoo
       - ./addons:/mnt/extra-addons
     ports:
       - "8069:8069"
@@ -23,3 +26,9 @@ services:
       - PORT=5432
       - USER=odoo
       - PASSWORD=${PASSWORD}
+
+volumes:
+    db:
+        driver: local
+    odoo:
+        driver: local
