@@ -15,7 +15,6 @@ services:
     depends_on:
       - db
     volumes:
-      - ./data/odoo:/var/lib/odoo
       - ./addons:/mnt/extra-addons
     ports:
       - "8069:8069"
