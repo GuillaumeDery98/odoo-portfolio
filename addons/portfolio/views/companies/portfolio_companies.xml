@@ -12,8 +12,8 @@
             <field name="model">portfolio.companies</field>
             <field name="arch" type="xml">
                 <tree string="Companies">
-                    <field name="name" />
-                    <field name="post" />
+                    <field name="logo" widget="image" class="logo-tree"/>
+                    <field name="name" class="h1"/>
                 </tree>
             </field>
         </record>
@@ -26,19 +26,20 @@
                     <sheet>
                         <group>
                             <group colspan="2">
-                                <field name="name" nolabel="1" class="h1" />
+                                <field name="logo" nolabel="1" widget="image" class="w-100"/>
+                                <field name="name" nolabel="1" class="h1"/>
                             </group>
                             <group>
-                                <field name="website" />
-                                <field name="post" />
+                                <field name="website"/>
+                                <field name="post"/>
                             </group>
                             <group>
-                                <field name="phone" />
-                                <field name="email" />
+                                <field name="phone"/>
+                                <field name="email"/>
                             </group>
                             <notebook>
                                 <page string="Description">
-                                    <field name="description" />
+                                    <field name="description"/>
                                 </page>
                             </notebook>
                         </group>

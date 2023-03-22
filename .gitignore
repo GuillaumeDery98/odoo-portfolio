@@ -2,3 +2,4 @@
 /data/odoo
 /addons/portfolio/__pycache__
 /addons/portfolio/models/__pycache__
+.idea

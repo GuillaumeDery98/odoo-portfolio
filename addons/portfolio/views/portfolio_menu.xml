@@ -1,8 +1,13 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<odoo><data>
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
 
-<menuitem id="portfolio_menu_root" name="Portfolio" sequence="10"/>
-<menuitem id="portfolio_menu" parent="portfolio_menu_root" name="Portfolio" sequence="10"/>
-<menuitem id="portfolio_companies_menu" name="Companies Portfolio" parent="portfolio_menu" sequence="10" action="portfolio_companies_action"/>
+        <menuitem id="portfolio_menu_root" name="Portfolio" sequence="10" />
+        <menuitem id="portfolio_menu" parent="portfolio_menu_root" name="Portfolio" sequence="10" />
+        <menuitem id="portfolio_companies_menu" name="Companies" parent="portfolio_menu"
+            sequence="10" action="portfolio_companies_action" />
+        <menuitem id="portfolio_projects_menu" name="Projects" parent="portfolio_menu" sequence="10"
+            action="portfolio_projects_action" />
 
-</data></odoo>
+    </data>
+</odoo>
