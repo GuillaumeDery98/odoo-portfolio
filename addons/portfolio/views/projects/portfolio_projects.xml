@@ -20,7 +20,7 @@
             </field>
         </record>
 
-         <record id="crm_lost_reason_view_form" model="ir.ui.view">
+         <record id="portfolio_projects_view_form" model="ir.ui.view">
             <field name="name">portfolio.projects.form</field>
             <field name="model">portfolio.projects</field>
             <field name="arch" type="xml">
@@ -33,7 +33,7 @@
                             </group>
                             <group colspan="2">
                                 <field name="website"/>
-                                <field name="company_id"/>
+                                <field name="company_id" widget="many2one"/>
                             </group>
                             <notebook>
                                 <page string="Description">
