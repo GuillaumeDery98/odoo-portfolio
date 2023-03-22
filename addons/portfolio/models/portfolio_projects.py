@@ -8,4 +8,5 @@ class PortfolioProjects(models.Model):
     name = fields.Char()
     description = fields.Text()
     website = fields.Char()
+    logo = fields.Binary()
     company_id = fields.Many2one("portfolio.companies", string="Company")

@@ -6,5 +6,44 @@
             <field name="res_model">portfolio.projects</field>
             <field name="view_mode">tree,form</field>
         </record>
+
+
+        <record id="portfolio_projects_view_tree" model="ir.ui.view">
+            <field name="name">portfolio.projects.tree</field>
+            <field name="model">portfolio.projects</field>
+            <field name="arch" type="xml">
+                <tree string="projects">
+                    <field name="logo" widget="image" class="logo-tree"/>
+                    <field name="name" class="h1"/>
+                    <field name="website" />
+                </tree>
+            </field>
+        </record>
+
+         <record id="crm_lost_reason_view_form" model="ir.ui.view">
+            <field name="name">portfolio.projects.form</field>
+            <field name="model">portfolio.projects</field>
+            <field name="arch" type="xml">
+                <form string="Company">
+                    <sheet>
+                        <group>
+                            <group colspan="2">
+                                <field name="logo" nolabel="1" widget="image" class="w-100"/>
+                                <field name="name" nolabel="1" class="h1"/>
+                            </group>
+                            <group colspan="2">
+                                <field name="website"/>
+                                <field name="company_id"/>
+                            </group>
+                            <notebook>
+                                <page string="Description">
+                                    <field name="description"/>
+                                </page>
+                            </notebook>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
     </data>
 </odoo>
