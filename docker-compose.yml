@@ -20,7 +20,7 @@ services:
       - odoo:/var/lib/odoo
       - ./addons:/mnt/extra-addons
     ports:
-      - "8069:8069"
+      - "80:8069"
     environment:
       - HOST=db
       - PORT=5432
