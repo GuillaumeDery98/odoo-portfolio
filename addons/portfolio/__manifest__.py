@@ -1,7 +1,7 @@
 {
     'name': "Guillaume Dery Portfolio",
     'version': '1.0',
-    'depends': ['base'],
+    'depends': ['base', 'crm'],
     'author': "Guillaume Dery",
     'application': True,
     'category': 'Human Resources',
